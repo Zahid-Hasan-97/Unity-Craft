@@ -23,8 +23,8 @@ export default function ProductsPage() {
             />
 
             <div className="grid md:grid-cols-3 gap-8">
-                {filtered.map((product) => (
-                    <ProductCard key={product.id} product={product} />
+                {filtered.map((product, index) => (
+                    <ProductCard key={product.id} product={product} index={index} />
                 ))}
             </div>
         </div>
