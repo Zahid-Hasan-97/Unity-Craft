@@ -49,8 +49,11 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Home Decor", img: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
-              { title: "Kitchenware", img: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&q=80&w=600" },
+              {
+                title: "Home Decor",
+                img: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=1200"
+              },
+              { title: "Kitchenware", img: "https://www.globalkitchenjapan.com/cdn/shop/files/collections_banner_1800_53ac9e82-d34a-44c1-a37c-569c3dd052c9_1600x.jpg?v=1643332906" },
               { title: "Custom Gifts", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" }
             ].map((cat, i) => (
               <Link href="/products" key={i}>
